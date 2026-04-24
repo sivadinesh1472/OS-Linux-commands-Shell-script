@@ -1,4 +1,3 @@
-bash
 case $USER in
 Ram | Robert)
 echo "Welcome, $USER"

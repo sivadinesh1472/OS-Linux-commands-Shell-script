@@ -757,7 +757,8 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
- 
+![casecheck](./img1/68-casecheck.png)
+
 cat > whiletest
 ```bash
 #!/bin/bash
@@ -773,7 +774,7 @@ $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
  
- 
+![chmod](./img1/69-chmod.png)
 cat untiltest.sh 
 ```bash
 \#using the until command
@@ -786,7 +787,7 @@ done
 ``` 
 $ chmod 755 untiltest.sh
  
- 
+ ![untiltest](./img1/70-until.png)
  
 cat forin1.sh 
 ```bash
@@ -799,7 +800,7 @@ done
  ```
  
 $ chmod 755 forin1.sh
- 
+![chmod](./img1/71-chmod.png)
  
 cat forin2.sh 
 ```bash
@@ -814,6 +815,8 @@ done
 $ chmod 755 forin2.sh
  
 cat forin2.sh 
+
+![cat-forin](./img1/72-cat-forin.png)
 ```bash
 \#!/bin/bash
 \# another example of how not to use the for command
@@ -826,6 +829,10 @@ $ chmod 755 forin2.sh
  
 $ ./forin2.sh 
  
+
+
+![forin](./img1/73-forin.png)
+
 cat forin3.sh 
 ```bash
 \#!/bin/bash
@@ -836,7 +843,8 @@ echo "word:$test"
 done
 ```
 $ ./forin3.sh 
- 
+ ![forin-3](./img1/74-forin3.png)
+
 cat forin1.sh 
 ```bash
 #!/bin/bash
@@ -849,6 +857,20 @@ done
 $ chmod 755 forin1.sh
 
 ## OUTPUT
+![catforin](./img1/75-cat%20forin3.png)
+
+cat forin3.sh
+
+\#!/bin/bash
+\# another example of how not to use the for command
+for test in I don\'t know if "this'll" work
+do
+echo "word:$test"
+done
+$ ./forin3.sh
+
+![catforin](./img1/76-catforin.png)
+
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -871,6 +893,7 @@ Khammam
 
 ## OUTPUT
 
+![cities](./img1/77-cities.png)
 
 cat forctype.sh 
 ```bash
@@ -884,7 +907,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
-
+![c-style](./img1/78-c-style.png)
 cat forctype1.sh 
 ```bash
 #!/bin/bash
@@ -897,7 +920,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
-
+![forcetye](./img1/79-force%20type.png)
 cat fornested1.sh 
 ```bash
 #!/bin/bash
@@ -915,7 +938,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
-
+![loop](./img1/80-loop.png)
  
 cat forbreak.sh 
 ```bash
@@ -932,6 +955,7 @@ done
 echo "The for loop is completed“
 ```
 ## OUTPUT
+![iteration](./img1/81-iteration.png)
 
 $ chmod 755 forbreak.sh
  
@@ -957,7 +981,7 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
- 
+![number](./img1/82-number.png)
 cat exread.sh 
 ```bash
 #!/bin/bash
@@ -971,7 +995,7 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
-
+![name](./img1/83-name.png)
 
  cat exread1.sh
 ```bash
@@ -983,7 +1007,7 @@ echo "Hello $name, welcome to my program. “
 $ chmod 755 exread1.sh 
 
 ## OUTPUT
-
+![name](./img1/84-name.png)
 
 
 $ ./exread1.sh 
@@ -1008,7 +1032,7 @@ fi
 
  
  ./funcex.sh 1 2
-
+![echo](./img1/85-echo.png)
  
 cat argshift.sh
 ```bash
@@ -1022,7 +1046,7 @@ $ chmod 777 argshift.sh
 
 ## OUTPUT
 $ ./argshift.sh 1 2 3
- 
+ ~[arg](./img1/86-arg.png)
  cat argshift1.sh
 ```bash
  #/bin/bash 
@@ -1045,7 +1069,7 @@ cat argshift.sh
 #!/bin/bash 
 set -x 
 while (( "$#" )); do 
-  echo $1 
+  echo $1 git 
   shift 
 done
 set +x
@@ -1053,7 +1077,7 @@ set +x
 ## OUTPUT
  ./argshift.sh 1 2 3
  
- 
+ ![++](./img1/87-++.png)
 cat > nc.awk
 ```bash
 BEGIN{}
@@ -1083,7 +1107,7 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
- 
+![awk](./img1/88-awk.png)
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1111,6 +1135,6 @@ fi
 ```
 ## OUTPUT 
 
-
+![palindrome](./img1/89-palin.png)
 # RESULT:
 The Commands are executed successfully.
