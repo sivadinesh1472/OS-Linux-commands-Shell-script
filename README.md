@@ -43,8 +43,7 @@ s.n. dasgupta
 cat < file1
 ## OUTPUT
 
-
-
+!
 cat < file2
 ## OUTPUT
 
@@ -52,15 +51,14 @@ cat < file2
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+ ![cmpfile](./img1/04-cmp.png)
 comm file1 file2
  ## OUTPUT
 
- 
+ ![commfile](./img1/04-comm.png)
 diff file1 file2
 ## OUTPUT
-
-
+![fifffile1](./img1/05-diff.png)
 #Filters
 
 ### Create the following files file11, file22 as follows:
