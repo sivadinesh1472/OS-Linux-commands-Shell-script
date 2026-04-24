@@ -43,11 +43,11 @@ s.n. dasgupta
 cat < file1
 ## OUTPUT
 
-!
+![catfile1](./img1/01-catfile1.png)
 cat < file2
 ## OUTPUT
 
-
+![catfile2](./img1/02-catfile2.png)
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
@@ -82,16 +82,18 @@ cut -c1-3 file11
 ## OUTPUT
 
 
+![catfil11](./img1/06-catfie11.png)
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
-
+![catfile22](./img1/07-file22.png)
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
 
+![catfile22](./img1/08-catfile22.png)
 
 cat < newfile 
 ```
