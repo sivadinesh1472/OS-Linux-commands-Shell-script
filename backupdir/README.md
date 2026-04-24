@@ -108,41 +108,39 @@ hello world
 grep Hello newfile 
 ## OUTPUT
 
-![catnewfile1](./img1/09-newfile.png)
 
 
 grep hello newfile 
 ## OUTPUT
 
-![grep hello newfile ](./img1/10-newfile.png)
+
 
 
 grep -v hello newfile 
 ## OUTPUT
 
-![grep -v hello newfile ](./img1/11.grep.png)
+
 
 cat newfile | grep -i "hello"
 ## OUTPUT
 
-![cat newfile | grep -i "hello"](./img1/12-catnewfile.png)
+
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
 
-![cat newfile | grep -i -c "hello"](./img1/13-catnew%20file.png)
+
 
 
 grep -R ubuntu /etc
 ## OUTPUT
 
-![grep -R ubuntu /etc](./img1/14-grep.png)
+
 
 grep -w -n world newfile   
 ## OUTPUT
 
-![grep -w -n world newfile ](./img1/15-grep.png)
 
 cat < newfile 
 ```
@@ -166,64 +164,59 @@ Linux is best in this World
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
 
-![egrep -w 'Hello|hello' newfile ](./img1/16-egrep.png)
+
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
 
-![egrep -w '(H|h)ello' newfile ](./img1/17-grep.png)
+
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
 
 
-![egrep-w](./img1/18-egrep.png)
+
 
 egrep '(^hello)' newfile 
 ## OUTPUT
 
-![egrep '(^hello)' newfile ](./img1/19-grep.png)
+
 
 egrep '(world$)' newfile 
 ## OUTPUT
 
-![egrep '(world$)' newfile ](./img1/20-world$.png)
+
 
 egrep '(World$)' newfile 
 ## OUTPUT
 
-![egrep '(World$)' newfile ](./img1/21-newfile.png)
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
 
-![egrep '((W|w)orld$)' newfile ](./img1/22-egrep.png)
+
 
 egrep '[1-9]' newfile 
 ## OUTPUT
 
-![egrep '[1-9]' newfile ](./img1/23-egrep.png)
+
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
 
-![egrep 'Linux.*world' newfile ](./img1/24-egrep.png)
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
-
-![egrep 'Linux.*World' newfile ](./img1/25-egrep.png)
 
 
 egrep l{2} newfile
 ## OUTPUT
 
-![egrep l{2} newfile](./img1/26-egrep.png)
+
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
 
-![egrep 's{1,2}' newfile](./img1/27-grep.png)
 
 cat > file23
 ```
@@ -242,84 +235,79 @@ cat > file23
 sed -n -e '3p' file23
 ## OUTPUT
 
-![sed -n -e '3p' file23](./img1/28-sed.png)
+
 
 sed -n -e '$p' file23
-
 ## OUTPUT
-![sed -n -e '$p' file23](./img1/29-sed.png)
+
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
 
-![sed  -e 's/Ram/Sita/' file23](./img1/30-sed.png)
+
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
 
-![sed  -e '2s/Ram/Sita/' file23](./img1/31-sed.png)
+
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
 
-![sed  '/tom/s/5000/6000/' file23](./img1/32-sed.png)
+
 
 sed -n -e '1,5p' file23
 ## OUTPUT
 
-![sed -n -e '1,5p' file23](./img1/33-sed.png)
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
 
-![sed -n -e '2,/Joe/p' file23](./img1/34-sed.png)
+
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
 
-![sed -n -e '/tom/,/Joe/p' file23](./img1/35-sed.png)
+
 
 seq 10 
 ## OUTPUT
 
-![seq10](./img1/36.png)
+
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
 
-![seq 10 | sed -n '4,6p'](./img1/37.png)
+
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
 
-![seq 10 | sed -n '2,~4p'](./img1/38.png)
+
 
 seq 3 | sed '2a hello'
 ## OUTPUT
 
-![seq3](./img1/39-seq3.png)
+
 
 seq 2 | sed '2i hello'
 ## OUTPUT
 
-![seq2](./img1/40-seq2.png)
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
-![seq10](./img1/41-seq10.png)
+
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
 
-![sed-n](./img1/42-sed.png)
+
 
 sed -n '2,4{s/$/*/;p}' file23
-## OUTPUT
 
-![ed -n '2,4{s/$/*/;p}' file23](./img1/43.png)
 
 #Sorting File content
 cat > file21
@@ -332,7 +320,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
-![sort file21](./img1/44-sort.png)
+
 
 cat > file22
 ```
@@ -346,13 +334,12 @@ cat > file22
 uniq file22
 ## OUTPUT
 
-![uniq](./img1/45-uniq.png)
+
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
-![cat file23 | tr [:lower:] [:upper:]](./img1/46-tr%20command.png)
 
 cat < urllist.txt
 ```
@@ -370,18 +357,17 @@ www. mrcet.... com
 cat urllist.txt | tr -d ' '
  ## OUTPUT
 
-![caturlist](./img1/47-cat%20urlist.png)
+
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
-![cat urllist.txt | tr -d ' ' | tr -s '.'](./img1/48-cat.png)
+
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
 
-![backup](./img1/49-backup.png)
 
 mkdir backupdir
  
@@ -392,24 +378,19 @@ cd backupdir
 tar -tvf backup.tar
 ## OUTPUT
 
-![tar-back](./img1/50-tar.png)
-
 
 tar -xvf backup.tar
 ## OUTPUT
-
-![tar -xvf backup.tar](./img1/51-tar.png)
-
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
- ![ls](./img1/52-ls.png)
+ 
 gunzip backup.tar.gz
 ## OUTPUT
 
- ![gunzip](./img1/53-gunzip.png					)
+ 
 # Shell Script
 ```
 echo '#!/bin/sh' > my-script.sh
@@ -419,8 +400,7 @@ chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
 
- ![shell script](./img1/54%20script.png)
-
+ 
 cat << stop > herecheck.txt
 ```
 hello in this world
@@ -431,7 +411,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
-![cat herecheck.txt](./img1/55-cat-stop.png)
+
 
 cat < scriptest.sh 
 ```bash
@@ -470,10 +450,10 @@ chmod 777 scriptest.sh
 
 ## OUTPUT
 
-![bash](./img1/57-bash.png)
+ 
 ls file1
 ## OUTPUT
-![lsfile](./img1/56-ls%20file.png)
+
 echo $?
 ## OUTPUT 
 ./one
@@ -481,13 +461,13 @@ bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
-![echo](./img1/58-echo.pnga)
+ 
 abcd
  
 echo $?
  ## OUTPUT
 
-![abcd](./img1/59-abcd.png)
+
  
 # mis-using string comparisons
 
@@ -519,13 +499,13 @@ fi
 ```
 ##OUTPUT
 
-![strcomp](./img1/60-strcomp.png)
+
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
-![strcomp](./img1/61-strcomp.png)
+
 
 # check file ownership
 cat < psswdperm.sh 
@@ -552,7 +532,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
-![psswdpern](./img1/62-pss.png)
+
 # check if with file location
 cat>ifnested.sh 
 ```bash
@@ -598,7 +578,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
-![ifnested](./img1/63-ifnested.png)
+
 
 
 # using numeric test comparisons
@@ -642,8 +622,6 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
-
-![iftest](./img1/64-iftest.png)
 
 # check if a file
 cat > ifnested.sh 
@@ -693,7 +671,7 @@ $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
 ##OUTPUT
-![ifnested](./img1/65-ifnested.png)
+
 # looking for a possible value using elif
 cat elifcheck.sh 
 ```bash
@@ -721,7 +699,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
-![elifcheck](./img1/66-elif.png)
+
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -737,7 +715,6 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
-![ifcompound](./img1/67-ifcompound.png)
 
 # using the case command
 cat >casecheck.sh 
@@ -818,7 +795,7 @@ cat forin2.sh
 \#!/bin/bash
 \# another example of how not to use the for command
 for test in I don't know if this'll work
-dob
+do
 echo “word:$test”
 done
 ```
